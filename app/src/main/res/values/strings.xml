@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">glt-video-analyzer</string>
+    <string name="hello_text">Hello GLT! 👋 운동 분석 앱 시작</string>
+</resources>

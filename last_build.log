@@ -1,0 +1,822 @@
+Initialized native services in: /data/data/com.termux/files/home/.gradle/native
+Initialized jansi services in: /data/data/com.termux/files/home/.gradle/native
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.0.0/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Starting process 'Gradle build daemon'. Working directory: /data/data/com.termux/files/home/.gradle/daemon/9.0.0 Command: /data/data/com.termux/files/usr/lib/jvm/java-17-openjdk/bin/java --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.prefs/java.util.prefs=ALL-UNNAMED --add-opens=java.base/java.nio.charset=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.xml/javax.xml.namespace=ALL-UNNAMED -Xmx2048m -Dfile.encoding=UTF-8 -Duser.country -Duser.language=en -Duser.variant -cp /data/data/com.termux/files/home/.gradle/wrapper/dists/gradle-9.0.0-bin/d6wjpkvcgsg3oed0qlfss3wgl/gradle-9.0.0/lib/gradle-daemon-main-9.0.0.jar -javaagent:/data/data/com.termux/files/home/.gradle/wrapper/dists/gradle-9.0.0-bin/d6wjpkvcgsg3oed0qlfss3wgl/gradle-9.0.0/lib/agents/gradle-instrumentation-agent-9.0.0.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 9.0.0
+Successfully started process 'Gradle build daemon'
+An attempt to start the daemon took 2.253 secs.
+The client will now receive all logging from the daemon (pid: 4068). The daemon log file: /data/data/com.termux/files/home/.gradle/daemon/9.0.0/daemon-4068.out.log
+Daemon will be stopped at the end of the build 
+Using 8 worker leases.
+Received JVM installation metadata from '/data/data/com.termux/files/usr/lib/jvm/java-17-openjdk': {JAVA_HOME=/data/data/com.termux/files/usr/lib/jvm/java-17-openjdk, JAVA_VERSION=17.0.16, JAVA_VENDOR=Termux, RUNTIME_NAME=OpenJDK Runtime Environment, RUNTIME_VERSION=17.0.16+0, VM_NAME=OpenJDK 64-Bit Server VM, VM_VERSION=17.0.16+0, VM_VENDOR=Termux, OS_ARCH=aarch64}
+Watching the file system is configured to be enabled if available
+File system watching is inactive
+Starting Build
+Settings evaluated using settings file '/storage/emulated/0/Download/glt-video-analyzer-skeleton/settings.gradle'.
+Projects loaded. Root project using build file '/storage/emulated/0/Download/glt-video-analyzer-skeleton/build.gradle'.
+Included projects: [root project 'glt-video-analyzer', project ':app']
+
+> Configure project :
+Evaluating root project 'glt-video-analyzer' using build file '/storage/emulated/0/Download/glt-video-analyzer-skeleton/build.gradle'.
+Resolved plugin [id: 'com.android.application', version: '8.4.2', apply: false]
+
+> Configure project :app
+Evaluating project ':app' using build file '/storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build.gradle'.
+Resolved plugin [id: 'com.android.application']
+Using default execution profile
+All projects evaluated.
+Task name matched 'assembleDebug'
+Selected primary task 'assembleDebug' from project :
+WARNING: We recommend using a newer Android Gradle plugin to use compileSdk = 35
+
+This Android Gradle plugin (8.4.2) was tested up to compileSdk = 34.
+
+You are strongly encouraged to update your project to use a newer
+Android Gradle plugin that has been tested with compileSdk = 35.
+
+If you are already using the latest version of the Android Gradle plugin,
+you may need to wait until a newer version with support for compileSdk = 35 is available.
+
+To suppress this warning, add/update
+    android.suppressUnsupportedCompileSdk=35
+to this project's gradle.properties.
+Tasks to be executed: [task ':app:preBuild', task ':app:preDebugBuild', task ':app:mergeDebugNativeDebugMetadata', task ':app:javaPreCompileDebug', task ':app:checkDebugAarMetadata', task ':app:generateDebugResValues', task ':app:mapDebugSourceSetPaths', task ':app:generateDebugResources', task ':app:mergeDebugResources', task ':app:packageDebugResources', task ':app:parseDebugLocalResources', task ':app:createDebugCompatibleScreenManifests', task ':app:extractDeepLinksDebug', task ':app:processDebugMainManifest', task ':app:processDebugManifest', task ':app:processDebugManifestForPackage', task ':app:processDebugResources', task ':app:compileDebugJavaWithJavac', task ':app:mergeDebugShaders', task ':app:compileDebugShaders', task ':app:generateDebugAssets', task ':app:mergeDebugAssets', task ':app:compressDebugAssets', task ':app:desugarDebugFileDependencies', task ':app:dexBuilderDebug', task ':app:mergeDebugGlobalSynthetics', task ':app:processDebugJavaRes', task ':app:mergeDebugJavaResource', task ':app:checkDebugDuplicateClasses', task ':app:mergeDebugStartupProfile', task ':app:mergeExtDexDebug', task ':app:mergeLibDexDebug', task ':app:mergeProjectDexDebug', task ':app:mergeDebugJniLibFolders', task ':app:mergeDebugNativeLibs', task ':app:stripDebugDebugSymbols', task ':app:validateSigningDebug', task ':app:writeDebugAppMetadata', task ':app:writeDebugSigningConfigVersions', task ':app:packageDebug', task ':app:createDebugApkListingFileRedirect', task ':app:assembleDebug']
+Tasks that were excluded: []
+Resolve mutations for :app:preBuild (Thread[Execution worker,5,main]) started.
+:app:preBuild (Thread[Execution worker,5,main]) started.
+
+> Task :app:preBuild UP-TO-DATE
+Skipping task ':app:preBuild' as it has no actions.
+Resolve mutations for :app:preDebugBuild (Thread[Execution worker,5,main]) started.
+:app:preDebugBuild (Thread[Execution worker,5,main]) started.
+
+> Task :app:preDebugBuild UP-TO-DATE
+Skipping task ':app:preDebugBuild' as it has no actions.
+Resolve mutations for :app:mergeDebugNativeDebugMetadata (Thread[Execution worker,5,main]) started.
+:app:mergeDebugNativeDebugMetadata (Thread[Execution worker,5,main]) started.
+
+> Task :app:mergeDebugNativeDebugMetadata NO-SOURCE
+Skipping task ':app:mergeDebugNativeDebugMetadata' as it has no source files and no previous output files.
+Resolve mutations for :app:javaPreCompileDebug (Thread[Execution worker,5,main]) started.
+:app:javaPreCompileDebug (Thread[Execution worker,5,main]) started.
+Resolve mutations for :app:checkDebugAarMetadata (Thread[Execution worker Thread 6,5,main]) started.
+:app:checkDebugAarMetadata (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :app:javaPreCompileDebug
+Caching disabled for task ':app:javaPreCompileDebug' because:
+  Build cache is disabled
+Task ':app:javaPreCompileDebug' is not up-to-date because:
+  Output property 'annotationProcessorListFile' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/annotation_processor_list/debug/javaPreCompileDebug/annotationProcessors.json has been removed.
+Resolve mutations for :app:generateDebugResValues (Thread[included builds,5,main]) started.
+:app:generateDebugResValues (Thread[included builds,5,main]) started.
+
+> Task :app:generateDebugResValues
+Caching disabled for task ':app:generateDebugResValues' because:
+  Build cache is disabled
+Task ':app:generateDebugResValues' is not up-to-date because:
+  Output property 'outputDirectory' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/generated/res/resValues/debug has been removed.
+Resolve mutations for :app:mapDebugSourceSetPaths (Thread[included builds,5,main]) started.
+:app:mapDebugSourceSetPaths (Thread[included builds,5,main]) started.
+
+> Task :app:checkDebugAarMetadata
+Caching disabled for task ':app:checkDebugAarMetadata' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:checkDebugAarMetadata' is not up-to-date because:
+  Output property 'dummyOutputDirectory' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/aar_metadata_check/debug/checkDebugAarMetadata has been removed.
+
+> Task :app:mapDebugSourceSetPaths
+Caching disabled for task ':app:mapDebugSourceSetPaths' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:mapDebugSourceSetPaths' is not up-to-date because:
+  Output property 'filepathMappingFile' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/source_set_path_map/debug/mapDebugSourceSetPaths/file-map.txt has been removed.
+Resolve mutations for :app:generateDebugResources (Thread[included builds,5,main]) started.
+:app:generateDebugResources (Thread[included builds,5,main]) started.
+
+> Task :app:generateDebugResources
+Caching disabled for task ':app:generateDebugResources' because:
+  Build cache is disabled
+Task ':app:generateDebugResources' is not up-to-date because:
+  Output property 'validationReportFile' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/nested_resources_validation_report/debug/generateDebugResources/nestedResourcesValidationReport.txt has been removed.
+Resolve mutations for :app:mergeDebugResources (Thread[included builds,5,main]) started.
+:app:mergeDebugResources (Thread[included builds,5,main]) started.
+
+> Task :app:mergeDebugResources
+Caching disabled for task ':app:mergeDebugResources' because:
+  Build cache is disabled
+Task ':app:mergeDebugResources' is not up-to-date because:
+  Output property 'blameLogOutputFolder' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out has been removed.
+  Output property 'blameLogOutputFolder' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2 has been removed.
+  Output property 'blameLogOutputFolder' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res_blame_folder/debug/mergeDebugResources/out/multi-v2/mergeDebugResources.json has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:mergeDebugResources'.
+[MergeResources] Inputs are non-incremental full task action.
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt/values-pt.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-pt_values-pt.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-watch-v20/values-watch-v20.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-watch-v20_values-watch-v20.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hi/values-hi.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-hi_values-hi.arsc.flat
+
+Resolve mutations for :app:packageDebugResources (Thread[Execution worker,5,main]) started.
+:app:packageDebugResources (Thread[Execution worker,5,main]) started.
+
+> Task :app:packageDebugResources
+Caching disabled for task ':app:packageDebugResources' because:
+  Build cache is disabled
+Task ':app:packageDebugResources' is not up-to-date because:
+  Output property 'dataBindingLayoutInfoOutFolder' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/data_binding_layout_info_type_package/debug/packageDebugResources/out has been removed.
+  Output property 'incrementalFolder' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/packageDebugResources has been removed.
+  Output property 'incrementalFolder' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/packageDebugResources/compile-file-map.properties has been removed.
+  and more...
+The input changes require a full rebuild for incremental task ':app:packageDebugResources'.
+[MergeResources] Inputs are non-incremental full task action.
+Resolve mutations for :app:parseDebugLocalResources (Thread[Execution worker,5,main]) started.
+:app:parseDebugLocalResources (Thread[Execution worker,5,main]) started.
+Resolve mutations for :app:createDebugCompatibleScreenManifests (Thread[Execution worker Thread 6,5,main]) started.
+:app:createDebugCompatibleScreenManifests (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :app:createDebugCompatibleScreenManifests
+Caching disabled for task ':app:createDebugCompatibleScreenManifests' because:
+  Build cache is disabled
+  Caching has been disabled for the task
+Task ':app:createDebugCompatibleScreenManifests' is not up-to-date because:
+  Output property 'outputFolder' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/compatible_screen_manifest/debug/createDebugCompatibleScreenManifests has been removed.
+  Output property 'outputFolder' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/compatible_screen_manifest/debug/createDebugCompatibleScreenManifests/output-metadata.json has been removed.
+Resolve mutations for :app:extractDeepLinksDebug (Thread[Execution worker Thread 6,5,main]) started.
+:app:extractDeepLinksDebug (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :app:extractDeepLinksDebug
+Caching disabled for task ':app:extractDeepLinksDebug' because:
+  Build cache is disabled
+Task ':app:extractDeepLinksDebug' is not up-to-date because:
+  Output property 'navigationJson' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/navigation_json/debug/extractDeepLinksDebug/navigation.json has been removed.
+Resolve mutations for :app:processDebugMainManifest (Thread[Execution worker Thread 6,5,main]) started.
+:app:processDebugMainManifest (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :app:parseDebugLocalResources
+Caching disabled for task ':app:parseDebugLocalResources' because:
+  Build cache is disabled
+Task ':app:parseDebugLocalResources' is not up-to-date because:
+  Output property 'librarySymbolsFile' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/local_only_symbol_list/debug/parseDebugLocalResources/R-def.txt has been removed.
+The input changes require a full rebuild for incremental task ':app:parseDebugLocalResources'.
+
+> Task :app:mergeDebugResources
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hr/values-hr.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-hr_values-hr.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values/values.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values_values.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hu/values-hu.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-hu_values-hu.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-watch-v21/values-watch-v21.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-watch-v21_values-watch-v21.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v17/values-v17.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v17_values-v17.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ldltr-v21/values-ldltr-v21.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ldltr-v21_values-ldltr-v21.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v18/values-v18.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v18_values-v18.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-am/values-am.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-am_values-am.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-w360dp-port-v13/values-w360dp-port-v13.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-w360dp-port-v13_values-w360dp-port-v13.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v16/values-v16.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v16_values-v16.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-in/values-in.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-in_values-in.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-is/values-is.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-is_values-is.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-iw/values-iw.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-iw_values-iw.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rHK/values-zh-rHK.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-zh-rHK_values-zh-rHK.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ja/values-ja.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ja_values-ja.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-it/values-it.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-it_values-it.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-b+sr+Latn_values-b+sr+Latn.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-es-rUS/values-es-rUS.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-es-rUS_values-es-rUS.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v23/values-v23.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v23_values-v23.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v21/values-v21.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v21_values-v21.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v22/values-v22.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v22_values-v22.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v26/values-v26.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v26_values-v26.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v25/values-v25.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v25_values-v25.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt-rPT/values-pt-rPT.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-pt-rPT_values-pt-rPT.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zu/values-zu.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-zu_values-zu.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h480dp-land-v13/values-h480dp-land-v13.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-h480dp-land-v13_values-h480dp-land-v13.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bn/values-bn.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-bn_values-bn.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ro/values-ro.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ro_values-ro.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bg/values-bg.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-bg_values-bg.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-be/values-be.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-be_values-be.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-bs/values-bs.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-bs_values-bs.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rCA/values-en-rCA.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-en-rCA_values-en-rCA.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sl/values-sl.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sl_values-sl.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sk/values-sk.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sk_values-sk.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-si/values-si.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-si_values-si.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sq/values-sq.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sq_values-sq.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ko/values-ko.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ko_values-ko.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ca/values-ca.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ca_values-ca.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h360dp-land-v13/values-h360dp-land-v13.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-h360dp-land-v13_values-h360dp-land-v13.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-kn/values-kn.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-kn_values-kn.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ru/values-ru.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ru_values-ru.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-th/values-th.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-th_values-th.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sv/values-sv.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sv_values-sv.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h720dp-v13/values-h720dp-v13.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-h720dp-v13_values-h720dp-v13.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ta/values-ta.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ta_values-ta.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sw/values-sw.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sw_values-sw.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-de/values-de.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-de_values-de.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lt/values-lt.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-lt_values-lt.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v34/values-v34.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v34_values-v34.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-te/values-te.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-te_values-te.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-xlarge-v4/values-xlarge-v4.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-xlarge-v4_values-xlarge-v4.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-tl/values-tl.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-tl_values-tl.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ur/values-ur.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ur_values-ur.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ml/values-ml.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ml_values-ml.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rIN/values-en-rIN.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-en-rIN_values-en-rIN.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-km/values-km.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-km_values-km.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lo/values-lo.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-lo_values-lo.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-el/values-el.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-el_values-el.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-my/values-my.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-my_values-my.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-uz/values-uz.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-uz_values-uz.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-lv/values-lv.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-lv_values-lv.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hy/values-hy.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-hy_values-hy.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mk/values-mk.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-mk_values-mk.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-et/values-et.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-et_values-et.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mn/values-mn.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-mn_values-mn.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-cs/values-cs.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-cs_values-cs.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-nb/values-nb.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-nb_values-nb.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-af/values-af.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-af_values-af.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-w600dp-land-v13/values-w600dp-land-v13.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-w600dp-land-v13_values-w600dp-land-v13.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ar/values-ar.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ar_values-ar.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rTW/values-zh-rTW.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-zh-rTW_values-zh-rTW.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-es/values-es.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-es_values-es.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ne/values-ne.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ne_values-ne.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fi/values-fi.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-fi_values-fi.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fr/values-fr.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-fr_values-fr.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-en-rAU_values-en-rAU.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-az/values-az.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-az_values-az.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-port/values-port.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-port_values-port.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-night-v8_values-night-v8.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-hdpi-v4_values-hdpi-v4.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rXC/values-en-rXC.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-en-rXC_values-en-rXC.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-or/values-or.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-or_values-or.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-b+es+419/values-b+es+419.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-b+es+419_values-b+es+419.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-uk/values-uk.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-uk_values-uk.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v28/values-v28.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v28_values-v28.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pa/values-pa.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-pa_values-pa.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-large-v4_values-large-v4.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-gl/values-gl.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-gl_values-gl.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v31/values-v31.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v31_values-v31.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ms/values-ms.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ms_values-ms.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-gu/values-gu.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-gu_values-gu.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-w400dp-port-v13/values-w400dp-port-v13.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-w400dp-port-v13_values-w400dp-port-v13.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-zh-rCN/values-zh-rCN.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-zh-rCN_values-zh-rCN.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-small-v4/values-small-v4.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-small-v4_values-small-v4.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sr/values-sr.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sr_values-sr.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h320dp-port-v13/values-h320dp-port-v13.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-h320dp-port-v13_values-h320dp-port-v13.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ky/values-ky.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ky_values-ky.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-w320dp-land-v13/values-w320dp-land-v13.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-w320dp-land-v13_values-w320dp-land-v13.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-as/values-as.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-as_values-as.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-da/values-da.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-da_values-da.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-v24/values-v24.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-v24_values-v24.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-h550dp-port-v13/values-h550dp-port-v13.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-h550dp-port-v13_values-h550dp-port-v13.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-sw600dp-v13/values-sw600dp-v13.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-sw600dp-v13_values-sw600dp-v13.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-mr/values-mr.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-mr_values-mr.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ka/values-ka.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ka_values-ka.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-eu/values-eu.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-eu_values-eu.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-kk/values-kk.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-kk_values-kk.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fa/values-fa.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-fa_values-fa.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pt-rBR/values-pt-rBR.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-pt-rBR_values-pt-rBR.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-en-rGB/values-en-rGB.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-en-rGB_values-en-rGB.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-tr/values-tr.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-tr_values-tr.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-pl/values-pl.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-pl_values-pl.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-ldrtl-v17/values-ldrtl-v17.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-ldrtl-v17_values-ldrtl-v17.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-fr-rCA/values-fr-rCA.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-fr-rCA_values-fr-rCA.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-vi/values-vi.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-vi_values-vi.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-nl/values-nl.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-nl_values-nl.arsc.flat
+Compiling XML table /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir/values-land/values-land.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/values-land_values-land.arsc.flat
+Compiling xml file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/src/main/res/layout/activity_main.xml to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_res/debug/mergeDebugResources/layout_activity_main.xml.flat
+
+> Task :app:processDebugMainManifest
+Caching disabled for task ':app:processDebugMainManifest' because:
+  Build cache is disabled
+Task ':app:processDebugMainManifest' is not up-to-date because:
+  Output property 'mergeBlameFile' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/manifest_merge_blame_file/debug/processDebugMainManifest/manifest-merger-blame-debug-report.txt has been removed.
+  Output property 'mergedManifest' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_manifest/debug/processDebugMainManifest/AndroidManifest.xml has been removed.
+  Output property 'reportFile' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/outputs/logs/manifest-merger-debug-report.txt has been removed.
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/f3f4c5cc6662c77bb3885d2b58762532/transformed/material-1.12.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/dd7ca8496e150b3f00ea07d6a99d69cb/transformed/constraintlayout-2.1.4/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/f2c0b3aa6c777f0f6171bd7da7967285/transformed/appcompat-resources-1.7.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/1e6e9761329c75d058649d7471dece0e/transformed/viewpager2-1.0.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c7200fc80996c586eb97046f967308c9/transformed/fragment-1.5.4/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/6509b4364cf78049226d67eb1f6af69e/transformed/activity-1.8.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/654caf6f0895743c3506230c3a1411cc/transformed/savedstate-1.2.1/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/6e5ba96ce76fb810147e009448696caa/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c315513bdb2440553ece3040430b5474/transformed/emoji2-1.3.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/94de9c660ffebde59b792bca369cf891/transformed/transition-1.5.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/ee4a510577cc29ff7886e423dfc53b72/transformed/dynamicanimation-1.0.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/958e1283fe5de6a9fc79fe580d64bd3a/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b6e380a855970a19e5fe68df6ba38959/transformed/loader-1.0.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/8035e9d6d0a13965dbcad4e6ccf7b99a/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/2576a3a58c8edd0ff2e28829ad135ae0/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/081802f796534a03903bebf2d815d2fc/transformed/lifecycle-process-2.6.2/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/f7b0a098d5397fe8ac36e549d6b01b51/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/136f2f813c97dcb2a4f98c266fcb8b88/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/2f20679168a28ab5c8d12520540d7429/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c864288bc4f3415e7d2cce91efe78bb6/transformed/core-ktx-1.13.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/a85458e2a1cc1ca78d078284b060e6ac/transformed/drawerlayout-1.1.1/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/ce681d77c4b17b2c5c060e3e8a03e88a/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/ac3b9bb7c2600632932dcc66fb427dd9/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/5fcc27c40e3b15e92df11f531096435a/transformed/vectordrawable-1.1.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c43716aa1f1c5efa44e548b012488a8d/transformed/viewpager-1.0.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/fc71240bfeca8c68bd50ac61b7c55f6f/transformed/recyclerview-1.1.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/081b4caacb4647928230292f3dc0aef4/transformed/customview-1.1.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/5f3dffe8b5ef4cce26c1ed17a1c65261/transformed/core-1.13.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/26d5b7a498bfd13ad9b199701241136f/transformed/cursoradapter-1.0.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b8155395673b873eba9c4cec05f6a15d/transformed/cardview-1.0.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/f0958e6ced522f9fc11c88339e573bc3/transformed/interpolator-1.0.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c3e686c8fa47c7a6bd1d0d850b7d6c3c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/0f1ba0cb9c03de23bff19207c70485e6/transformed/startup-runtime-1.1.1/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/f802b183173a1a0f6f4da76ac690d58e/transformed/tracing-1.0.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/079b25eeabe6a8b744fcbfb61b848561/transformed/core-runtime-2.2.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/ca8f8161ede432f1223a3a2d52bf3a3e/transformed/documentfile-1.0.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/bf35e73c87d396bb2efb2453f95fbd83/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/dcf45d14ed472518e31ebae4949fe64d/transformed/print-1.0.0/AndroidManifest.xml
+Loading library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/57dffa4de38576c68df0a259d08cfde3/transformed/annotation-experimental-1.4.0/AndroidManifest.xml
+Merging main manifest /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/src/main/AndroidManifest.xml
+
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/f3f4c5cc6662c77bb3885d2b58762532/transformed/material-1.12.0/AndroidManifest.xml
+Merging manifest with lower [com.google.android.material:material:1.12.0] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [com.google.android.material:material:1.12.0] AndroidManifest.xml:20:5-44
+application defined in both files...
+Merging application with lower [com.google.android.material:material:1.12.0] AndroidManifest.xml:22:5-20
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/dd7ca8496e150b3f00ea07d6a99d69cb/transformed/constraintlayout-2.1.4/AndroidManifest.xml
+Merging manifest with lower [androidx.constraintlayout:constraintlayout:2.1.4] AndroidManifest.xml:2:1-11:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.constraintlayout:constraintlayout:2.1.4] AndroidManifest.xml:5:5-7:41
+application defined in both files...
+Merging application with lower [androidx.constraintlayout:constraintlayout:2.1.4] AndroidManifest.xml:9:5-20
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/f2c0b3aa6c777f0f6171bd7da7967285/transformed/appcompat-resources-1.7.0/AndroidManifest.xml
+Merging manifest with lower [androidx.appcompat:appcompat-resources:1.7.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.appcompat:appcompat-resources:1.7.0] AndroidManifest.xml:5:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/AndroidManifest.xml
+Merging manifest with lower [androidx.appcompat:appcompat:1.7.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.appcompat:appcompat:1.7.0] AndroidManifest.xml:5:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/1e6e9761329c75d058649d7471dece0e/transformed/viewpager2-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.viewpager2:viewpager2:1.0.0] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.viewpager2:viewpager2:1.0.0] AndroidManifest.xml:20:5-22:41
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c7200fc80996c586eb97046f967308c9/transformed/fragment-1.5.4/AndroidManifest.xml
+Merging manifest with lower [androidx.fragment:fragment:1.5.4] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.fragment:fragment:1.5.4] AndroidManifest.xml:20:5-22:41
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/6509b4364cf78049226d67eb1f6af69e/transformed/activity-1.8.0/AndroidManifest.xml
+Merging manifest with lower [androidx.activity:activity:1.8.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.activity:activity:1.8.0] AndroidManifest.xml:20:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/654caf6f0895743c3506230c3a1411cc/transformed/savedstate-1.2.1/AndroidManifest.xml
+Merging manifest with lower [androidx.savedstate:savedstate:1.2.1] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.savedstate:savedstate:1.2.1] AndroidManifest.xml:20:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/6e5ba96ce76fb810147e009448696caa/transformed/emoji2-views-helper-1.3.0/AndroidManifest.xml
+Merging manifest with lower [androidx.emoji2:emoji2-views-helper:1.3.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.emoji2:emoji2-views-helper:1.3.0] AndroidManifest.xml:5:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c315513bdb2440553ece3040430b5474/transformed/emoji2-1.3.0/AndroidManifest.xml
+Merging manifest with lower [androidx.emoji2:emoji2:1.3.0] AndroidManifest.xml:17:1-35:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.emoji2:emoji2:1.3.0] AndroidManifest.xml:21:5-44
+application defined in both files...
+Merging application with lower [androidx.emoji2:emoji2:1.3.0] AndroidManifest.xml:23:5-33:19
+Adopted [provider: null]
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/94de9c660ffebde59b792bca369cf891/transformed/transition-1.5.0/AndroidManifest.xml
+Merging manifest with lower [androidx.transition:transition:1.5.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.transition:transition:1.5.0] AndroidManifest.xml:5:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/ee4a510577cc29ff7886e423dfc53b72/transformed/dynamicanimation-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.dynamicanimation:dynamicanimation:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.dynamicanimation:dynamicanimation:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/958e1283fe5de6a9fc79fe580d64bd3a/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.legacy:legacy-support-core-utils:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.legacy:legacy-support-core-utils:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b6e380a855970a19e5fe68df6ba38959/transformed/loader-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.loader:loader:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.loader:loader:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/8035e9d6d0a13965dbcad4e6ccf7b99a/transformed/lifecycle-livedata-2.6.2/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-livedata:2.6.2] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-livedata:2.6.2] AndroidManifest.xml:20:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/2576a3a58c8edd0ff2e28829ad135ae0/transformed/lifecycle-viewmodel-2.6.2/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-viewmodel:2.6.2] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-viewmodel:2.6.2] AndroidManifest.xml:20:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/081802f796534a03903bebf2d815d2fc/transformed/lifecycle-process-2.6.2/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-process:2.6.2] AndroidManifest.xml:17:1-35:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-process:2.6.2] AndroidManifest.xml:21:5-44
+application defined in both files...
+Merging application with lower [androidx.lifecycle:lifecycle-process:2.6.2] AndroidManifest.xml:23:5-33:19
+provider#androidx.startup.InitializationProvider defined in both files...
+Merging provider#androidx.startup.InitializationProvider with lower [androidx.lifecycle:lifecycle-process:2.6.2] AndroidManifest.xml:24:9-32:20
+Adopted [meta-data: null]
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/f7b0a098d5397fe8ac36e549d6b01b51/transformed/lifecycle-livedata-core-2.6.2/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-livedata-core:2.6.2] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-livedata-core:2.6.2] AndroidManifest.xml:20:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/136f2f813c97dcb2a4f98c266fcb8b88/transformed/lifecycle-runtime-2.6.2/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-runtime:2.6.2] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-runtime:2.6.2] AndroidManifest.xml:5:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/2f20679168a28ab5c8d12520540d7429/transformed/lifecycle-viewmodel-savedstate-2.6.2/AndroidManifest.xml
+Merging manifest with lower [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.6.2] AndroidManifest.xml:20:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c864288bc4f3415e7d2cce91efe78bb6/transformed/core-ktx-1.13.0/AndroidManifest.xml
+Merging manifest with lower [androidx.core:core-ktx:1.13.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.core:core-ktx:1.13.0] AndroidManifest.xml:5:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/a85458e2a1cc1ca78d078284b060e6ac/transformed/drawerlayout-1.1.1/AndroidManifest.xml
+Merging manifest with lower [androidx.drawerlayout:drawerlayout:1.1.1] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.drawerlayout:drawerlayout:1.1.1] AndroidManifest.xml:20:5-22:41
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/ce681d77c4b17b2c5c060e3e8a03e88a/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml
+Merging manifest with lower [androidx.coordinatorlayout:coordinatorlayout:1.1.0] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.coordinatorlayout:coordinatorlayout:1.1.0] AndroidManifest.xml:20:5-22:41
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/ac3b9bb7c2600632932dcc66fb427dd9/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml
+Merging manifest with lower [androidx.vectordrawable:vectordrawable-animated:1.1.0] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.vectordrawable:vectordrawable-animated:1.1.0] AndroidManifest.xml:20:5-22:41
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/5fcc27c40e3b15e92df11f531096435a/transformed/vectordrawable-1.1.0/AndroidManifest.xml
+Merging manifest with lower [androidx.vectordrawable:vectordrawable:1.1.0] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.vectordrawable:vectordrawable:1.1.0] AndroidManifest.xml:20:5-22:41
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c43716aa1f1c5efa44e548b012488a8d/transformed/viewpager-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.viewpager:viewpager:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.viewpager:viewpager:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/fc71240bfeca8c68bd50ac61b7c55f6f/transformed/recyclerview-1.1.0/AndroidManifest.xml
+Merging manifest with lower [androidx.recyclerview:recyclerview:1.1.0] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.recyclerview:recyclerview:1.1.0] AndroidManifest.xml:20:5-22:41
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/081b4caacb4647928230292f3dc0aef4/transformed/customview-1.1.0/AndroidManifest.xml
+Merging manifest with lower [androidx.customview:customview:1.1.0] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.customview:customview:1.1.0] AndroidManifest.xml:20:5-22:41
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/5f3dffe8b5ef4cce26c1ed17a1c65261/transformed/core-1.13.0/AndroidManifest.xml
+Merging manifest with lower [androidx.core:core:1.13.0] AndroidManifest.xml:17:1-30:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.core:core:1.13.0] AndroidManifest.xml:20:5-44
+Adopted [permission: null]
+Adopted [uses-permission: null]
+application defined in both files...
+Merging application with lower [androidx.core:core:1.13.0] AndroidManifest.xml:28:5-89
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/26d5b7a498bfd13ad9b199701241136f/transformed/cursoradapter-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.cursoradapter:cursoradapter:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.cursoradapter:cursoradapter:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml
+Merging manifest with lower [androidx.profileinstaller:profileinstaller:1.3.1] AndroidManifest.xml:17:1-55:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.profileinstaller:profileinstaller:1.3.1] AndroidManifest.xml:21:5-44
+application defined in both files...
+Merging application with lower [androidx.profileinstaller:profileinstaller:1.3.1] AndroidManifest.xml:23:5-53:19
+provider#androidx.startup.InitializationProvider defined in both files...
+Merging provider#androidx.startup.InitializationProvider with lower [androidx.profileinstaller:profileinstaller:1.3.1] AndroidManifest.xml:24:9-32:20
+Adopted [meta-data: null]
+Adopted [receiver: null]
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b8155395673b873eba9c4cec05f6a15d/transformed/cardview-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.cardview:cardview:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.cardview:cardview:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/f0958e6ced522f9fc11c88339e573bc3/transformed/interpolator-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.interpolator:interpolator:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.interpolator:interpolator:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c3e686c8fa47c7a6bd1d0d850b7d6c3c/transformed/versionedparcelable-1.1.1/AndroidManifest.xml
+Merging manifest with lower [androidx.versionedparcelable:versionedparcelable:1.1.1] AndroidManifest.xml:17:1-27:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.versionedparcelable:versionedparcelable:1.1.1] AndroidManifest.xml:20:5-22:41
+application defined in both files...
+Merging application with lower [androidx.versionedparcelable:versionedparcelable:1.1.1] AndroidManifest.xml:24:5-25:19
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/0f1ba0cb9c03de23bff19207c70485e6/transformed/startup-runtime-1.1.1/AndroidManifest.xml
+Merging manifest with lower [androidx.startup:startup-runtime:1.1.1] AndroidManifest.xml:17:1-33:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.startup:startup-runtime:1.1.1] AndroidManifest.xml:21:5-23:41
+application defined in both files...
+Merging application with lower [androidx.startup:startup-runtime:1.1.1] AndroidManifest.xml:25:5-31:19
+provider#androidx.startup.InitializationProvider defined in both files...
+Merging provider#androidx.startup.InitializationProvider with lower [androidx.startup:startup-runtime:1.1.1] AndroidManifest.xml:26:9-30:34
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/f802b183173a1a0f6f4da76ac690d58e/transformed/tracing-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.tracing:tracing:1.0.0] AndroidManifest.xml:17:1-24:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.tracing:tracing:1.0.0] AndroidManifest.xml:20:5-22:41
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/079b25eeabe6a8b744fcbfb61b848561/transformed/core-runtime-2.2.0/AndroidManifest.xml
+Merging manifest with lower [androidx.arch.core:core-runtime:2.2.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.arch.core:core-runtime:2.2.0] AndroidManifest.xml:20:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/ca8f8161ede432f1223a3a2d52bf3a3e/transformed/documentfile-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.documentfile:documentfile:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.documentfile:documentfile:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/bf35e73c87d396bb2efb2453f95fbd83/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/dcf45d14ed472518e31ebae4949fe64d/transformed/print-1.0.0/AndroidManifest.xml
+Merging manifest with lower [androidx.print:print:1.0.0] AndroidManifest.xml:17:1-22:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.print:print:1.0.0] AndroidManifest.xml:20:5-44
+Merging library manifest /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/57dffa4de38576c68df0a259d08cfde3/transformed/annotation-experimental-1.4.0/AndroidManifest.xml
+Merging manifest with lower [androidx.annotation:annotation-experimental:1.4.0] AndroidManifest.xml:2:1-7:12
+uses-sdk defined in both files...
+Merging uses-sdk with lower [androidx.annotation:annotation-experimental:1.4.0] AndroidManifest.xml:5:5-44
+Merging result: SUCCESS
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.gltvideoanalyzer"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="35" />
+10
+11    <permission
+11-->[androidx.core:core:1.13.0] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/5f3dffe8b5ef4cce26c1ed17a1c65261/transformed/core-1.13.0/AndroidManifest.xml:22:5-24:47
+12        android:name="com.example.gltvideoanalyzer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.13.0] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/5f3dffe8b5ef4cce26c1ed17a1c65261/transformed/core-1.13.0/AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.13.0] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/5f3dffe8b5ef4cce26c1ed17a1c65261/transformed/core-1.13.0/AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.example.gltvideoanalyzer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.13.0] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/5f3dffe8b5ef4cce26c1ed17a1c65261/transformed/core-1.13.0/AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.13.0] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/5f3dffe8b5ef4cce26c1ed17a1c65261/transformed/core-1.13.0/AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->/storage/emulated/0/Download/glt-video-analyzer-skeleton/app/src/main/AndroidManifest.xml:3:5-18:19
+18        android:allowBackup="true"
+18-->/storage/emulated/0/Download/glt-video-analyzer-skeleton/app/src/main/AndroidManifest.xml:4:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.13.0] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/5f3dffe8b5ef4cce26c1ed17a1c65261/transformed/core-1.13.0/AndroidManifest.xml:28:18-86
+20        android:debuggable="true"
+21        android:extractNativeLibs="false"
+22        android:icon="@mipmap/ic_launcher"
+22-->/storage/emulated/0/Download/glt-video-analyzer-skeleton/app/src/main/AndroidManifest.xml:6:9-43
+23        android:label="@string/app_name"
+23-->/storage/emulated/0/Download/glt-video-analyzer-skeleton/app/src/main/AndroidManifest.xml:5:9-41
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->/storage/emulated/0/Download/glt-video-analyzer-skeleton/app/src/main/AndroidManifest.xml:7:9-54
+25        android:supportsRtl="true"
+25-->/storage/emulated/0/Download/glt-video-analyzer-skeleton/app/src/main/AndroidManifest.xml:8:9-35
+26        android:theme="@style/Theme.GltVideoAnalyzer" >
+26-->/storage/emulated/0/Download/glt-video-analyzer-skeleton/app/src/main/AndroidManifest.xml:9:9-54
+27        <activity
+27-->/storage/emulated/0/Download/glt-video-analyzer-skeleton/app/src/main/AndroidManifest.xml:10:9-17:20
+28            android:name="com.example.gltvideoanalyzer.MainActivity"
+28-->/storage/emulated/0/Download/glt-video-analyzer-skeleton/app/src/main/AndroidManifest.xml:11:13-41
+29            android:exported="true" >
+29-->/storage/emulated/0/Download/glt-video-analyzer-skeleton/app/src/main/AndroidManifest.xml:12:13-36
+30            <intent-filter>
+30-->/storage/emulated/0/Download/glt-video-analyzer-skeleton/app/src/main/AndroidManifest.xml:13:13-16:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->/storage/emulated/0/Download/glt-video-analyzer-skeleton/app/src/main/AndroidManifest.xml:14:17-68
+31-->/storage/emulated/0/Download/glt-video-analyzer-skeleton/app/src/main/AndroidManifest.xml:14:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->/storage/emulated/0/Download/glt-video-analyzer-skeleton/app/src/main/AndroidManifest.xml:15:17-76
+33-->/storage/emulated/0/Download/glt-video-analyzer-skeleton/app/src/main/AndroidManifest.xml:15:27-74
+34            </intent-filter>
+35        </activity>
+36
+37        <provider
+37-->[androidx.emoji2:emoji2:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c315513bdb2440553ece3040430b5474/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+38            android:name="androidx.startup.InitializationProvider"
+38-->[androidx.emoji2:emoji2:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c315513bdb2440553ece3040430b5474/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+39            android:authorities="com.example.gltvideoanalyzer.androidx-startup"
+39-->[androidx.emoji2:emoji2:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c315513bdb2440553ece3040430b5474/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+40            android:exported="false" >
+40-->[androidx.emoji2:emoji2:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c315513bdb2440553ece3040430b5474/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+41            <meta-data
+41-->[androidx.emoji2:emoji2:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c315513bdb2440553ece3040430b5474/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
+42                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+42-->[androidx.emoji2:emoji2:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c315513bdb2440553ece3040430b5474/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+43                android:value="androidx.startup" />
+43-->[androidx.emoji2:emoji2:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c315513bdb2440553ece3040430b5474/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
+44            <meta-data
+44-->[androidx.lifecycle:lifecycle-process:2.6.2] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/081802f796534a03903bebf2d815d2fc/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+45                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+45-->[androidx.lifecycle:lifecycle-process:2.6.2] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/081802f796534a03903bebf2d815d2fc/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+46                android:value="androidx.startup" />
+46-->[androidx.lifecycle:lifecycle-process:2.6.2] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/081802f796534a03903bebf2d815d2fc/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+47            <meta-data
+47-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+48                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+48-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+49                android:value="androidx.startup" />
+49-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+50        </provider>
+51
+52        <receiver
+52-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+53            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+53-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+54            android:directBootAware="false"
+54-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+55            android:enabled="true"
+55-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+56            android:exported="true"
+56-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+57            android:permission="android.permission.DUMP" >
+57-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+58            <intent-filter>
+58-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+59                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+59-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+59-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+60            </intent-filter>
+61            <intent-filter>
+61-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+62                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+62-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+62-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+63            </intent-filter>
+64            <intent-filter>
+64-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+65                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+65-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+65-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+66            </intent-filter>
+67            <intent-filter>
+67-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+68                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+68-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+68-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/b5ac6ba852bfa2363eaa9e0aa7d439d0/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+69            </intent-filter>
+70        </receiver>
+71    </application>
+72
+73</manifest>
+
+Merged manifest saved to /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_manifest/debug/processDebugMainManifest/AndroidManifest.xml
+Resolve mutations for :app:processDebugManifest (Thread[Execution worker,5,main]) started.
+:app:processDebugManifest (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :app:processDebugManifest
+Caching disabled for task ':app:processDebugManifest' because:
+  Build cache is disabled
+Task ':app:processDebugManifest' is not up-to-date because:
+  Output property 'multiApkManifestOutputDirectory' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_manifests/debug/processDebugManifest has been removed.
+  Output property 'multiApkManifestOutputDirectory' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_manifests/debug/processDebugManifest/AndroidManifest.xml has been removed.
+  Output property 'multiApkManifestOutputDirectory' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_manifests/debug/processDebugManifest/output-metadata.json has been removed.
+Resolve mutations for :app:processDebugManifestForPackage (Thread[Execution worker Thread 6,5,main]) started.
+:app:processDebugManifestForPackage (Thread[Execution worker Thread 6,5,main]) started.
+Resolve mutations for :app:mergeDebugShaders (Thread[included builds,5,main]) started.
+:app:mergeDebugShaders (Thread[included builds,5,main]) started.
+
+> Task :app:mergeDebugShaders
+Caching disabled for task ':app:mergeDebugShaders' because:
+  Build cache is disabled
+  Simple merging task
+Task ':app:mergeDebugShaders' is not up-to-date because:
+  Output property 'outputDir' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/merged_shaders/debug/mergeDebugShaders/out has been removed.
+The input changes require a full rebuild for incremental task ':app:mergeDebugShaders'.
+Resolve mutations for :app:compileDebugShaders (Thread[included builds,5,main]) started.
+:app:compileDebugShaders (Thread[included builds,5,main]) started.
+
+> Task :app:compileDebugShaders NO-SOURCE
+Skipping task ':app:compileDebugShaders' as it has no source files and no previous output files.
+Resolve mutations for :app:generateDebugAssets (Thread[included builds,5,main]) started.
+:app:generateDebugAssets (Thread[included builds,5,main]) started.
+
+> Task :app:generateDebugAssets UP-TO-DATE
+Skipping task ':app:generateDebugAssets' as it has no actions.
+Resolve mutations for :app:mergeDebugAssets (Thread[included builds,5,main]) started.
+
+> Task :app:processDebugManifestForPackage
+Custom actions are attached to task ':app:processDebugManifestForPackage'.
+Caching disabled for task ':app:processDebugManifestForPackage' because:
+  Build cache is disabled
+Task ':app:processDebugManifestForPackage' is not up-to-date because:
+  Output property 'packageManifests' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/packaged_manifests/debug/processDebugManifestForPackage has been removed.
+  Output property 'packageManifests' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/packaged_manifests/debug/processDebugManifestForPackage/AndroidManifest.xml has been removed.
+  Output property 'packageManifests' file /storage/emulated/0/Download/glt-video-analyzer-skeleton/app/build/intermediates/packaged_manifests/debug/processDebugManifestForPackage/output-metadata.json has been removed.
+Resolve mutations for :app:processDebugResources (Thread[Execution worker Thread 6,5,main]) started.
+:app:processDebugResources (Thread[Execution worker Thread 6,5,main]) started.
+
+> Task :app:processDebugResources FAILED
+Caching disabled for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0 because:
+  Build cache is disabled
+Caching disabled for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/5f3dffe8b5ef4cce26c1ed17a1c65261/transformed/core-1.13.0 because:
+  Build cache is disabled
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/abc_fade_in.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_abc_fade_in.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/abc_fade_out.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_abc_fade_out.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/abc_grow_fade_in_from_bottom.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_abc_grow_fade_in_from_bottom.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/5f3dffe8b5ef4cce26c1ed17a1c65261/transformed/core-1.13.0/res/drawable-v21/notification_action_background.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/2a169f52fdfeee72c34d7b9a85e43257-5b3e7e43-52df-4ba5-a59b-efc63a1717a0/transformed/androidx.core/drawable-v21_notification_action_background.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/abc_popup_enter.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_abc_popup_enter.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/abc_popup_exit.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_abc_popup_exit.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/5f3dffe8b5ef4cce26c1ed17a1c65261/transformed/core-1.13.0/res/drawable-anydpi-v21/ic_call_answer.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/2a169f52fdfeee72c34d7b9a85e43257-5b3e7e43-52df-4ba5-a59b-efc63a1717a0/transformed/androidx.core/drawable-anydpi-v21_ic_call_answer.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/abc_shrink_fade_out_from_bottom.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_abc_shrink_fade_out_from_bottom.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/abc_slide_in_bottom.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_abc_slide_in_bottom.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/abc_slide_in_top.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_abc_slide_in_top.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/abc_slide_out_bottom.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_abc_slide_out_bottom.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/5f3dffe8b5ef4cce26c1ed17a1c65261/transformed/core-1.13.0/res/drawable-anydpi-v21/ic_call_answer_low.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/2a169f52fdfeee72c34d7b9a85e43257-5b3e7e43-52df-4ba5-a59b-efc63a1717a0/transformed/androidx.core/drawable-anydpi-v21_ic_call_answer_low.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/abc_slide_out_top.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_abc_slide_out_top.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/5f3dffe8b5ef4cce26c1ed17a1c65261/transformed/core-1.13.0/res/drawable-anydpi-v21/ic_call_answer_video_low.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/2a169f52fdfeee72c34d7b9a85e43257-5b3e7e43-52df-4ba5-a59b-efc63a1717a0/transformed/androidx.core/drawable-anydpi-v21_ic_call_answer_video_low.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/abc_tooltip_enter.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_abc_tooltip_enter.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/5f3dffe8b5ef4cce26c1ed17a1c65261/transformed/core-1.13.0/res/drawable-anydpi-v21/ic_call_answer_video.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/2a169f52fdfeee72c34d7b9a85e43257-5b3e7e43-52df-4ba5-a59b-efc63a1717a0/transformed/androidx.core/drawable-anydpi-v21_ic_call_answer_video.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/abc_tooltip_exit.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_abc_tooltip_exit.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/5f3dffe8b5ef4cce26c1ed17a1c65261/transformed/core-1.13.0/res/drawable-anydpi-v21/ic_call_decline_low.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/2a169f52fdfeee72c34d7b9a85e43257-5b3e7e43-52df-4ba5-a59b-efc63a1717a0/transformed/androidx.core/drawable-anydpi-v21_ic_call_decline_low.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/btn_checkbox_to_checked_box_inner_merged_animation.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_btn_checkbox_to_checked_box_inner_merged_animation.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/5f3dffe8b5ef4cce26c1ed17a1c65261/transformed/core-1.13.0/res/drawable-anydpi-v21/ic_call_decline.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/2a169f52fdfeee72c34d7b9a85e43257-5b3e7e43-52df-4ba5-a59b-efc63a1717a0/transformed/androidx.core/drawable-anydpi-v21_ic_call_decline.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/btn_checkbox_to_checked_box_outer_merged_animation.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_btn_checkbox_to_checked_box_outer_merged_animation.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/btn_checkbox_to_checked_icon_null_animation.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_btn_checkbox_to_checked_icon_null_animation.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/btn_checkbox_to_unchecked_box_inner_merged_animation.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_btn_checkbox_to_unchecked_box_inner_merged_animation.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/btn_checkbox_to_unchecked_check_path_merged_animation.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_btn_checkbox_to_unchecked_check_path_merged_animation.xml.flat
+AAPT2 aapt2-8.4.2-11315950-linux Daemon #0: starting
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/btn_checkbox_to_unchecked_icon_null_animation.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_btn_checkbox_to_unchecked_icon_null_animation.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/btn_radio_to_off_mtrl_dot_group_animation.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_btn_radio_to_off_mtrl_dot_group_animation.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/btn_radio_to_off_mtrl_ring_outer_animation.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_btn_radio_to_off_mtrl_ring_outer_animation.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/btn_radio_to_off_mtrl_ring_outer_path_animation.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_btn_radio_to_off_mtrl_ring_outer_path_animation.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/btn_radio_to_on_mtrl_dot_group_animation.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_btn_radio_to_on_mtrl_dot_group_animation.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/btn_radio_to_on_mtrl_ring_outer_animation.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_btn_radio_to_on_mtrl_ring_outer_animation.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/anim/btn_radio_to_on_mtrl_ring_outer_path_animation.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/anim_btn_radio_to_on_mtrl_ring_outer_path_animation.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color/abc_background_cache_hint_selector_material_dark.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color_abc_background_cache_hint_selector_material_dark.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color/abc_background_cache_hint_selector_material_light.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color_abc_background_cache_hint_selector_material_light.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color/abc_btn_colored_text_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color_abc_btn_colored_text_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color/abc_hint_foreground_material_dark.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color_abc_hint_foreground_material_dark.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color/abc_hint_foreground_material_light.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color_abc_hint_foreground_material_light.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color/abc_primary_text_disable_only_material_dark.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color_abc_primary_text_disable_only_material_dark.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color/abc_primary_text_disable_only_material_light.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color_abc_primary_text_disable_only_material_light.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color/abc_primary_text_material_dark.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color_abc_primary_text_material_dark.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color/abc_primary_text_material_light.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color_abc_primary_text_material_light.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color/abc_search_url_text.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color_abc_search_url_text.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color/abc_secondary_text_material_dark.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color_abc_secondary_text_material_dark.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color/abc_secondary_text_material_light.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color_abc_secondary_text_material_light.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color/abc_tint_btn_checkable.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color_abc_tint_btn_checkable.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color/abc_tint_default.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color_abc_tint_default.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color/abc_tint_edittext.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color_abc_tint_edittext.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color/abc_tint_seek_thumb.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color_abc_tint_seek_thumb.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color/abc_tint_spinner.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color_abc_tint_spinner.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color/abc_tint_switch_track.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color_abc_tint_switch_track.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color/switch_thumb_material_dark.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color_switch_thumb_material_dark.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color/switch_thumb_material_light.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color_switch_thumb_material_light.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color-v21/abc_btn_colored_borderless_text_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color-v21_abc_btn_colored_borderless_text_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color-v23/abc_btn_colored_borderless_text_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color-v23_abc_btn_colored_borderless_text_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color-v23/abc_btn_colored_text_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color-v23_abc_btn_colored_text_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color-v23/abc_color_highlight_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color-v23_abc_color_highlight_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color-v23/abc_tint_btn_checkable.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color-v23_abc_tint_btn_checkable.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color-v23/abc_tint_default.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color-v23_abc_tint_default.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color-v23/abc_tint_edittext.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color-v23_abc_tint_edittext.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color-v23/abc_tint_seek_thumb.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color-v23_abc_tint_seek_thumb.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color-v23/abc_tint_spinner.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color-v23_abc_tint_spinner.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/color-v23/abc_tint_switch_track.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/color-v23_abc_tint_switch_track.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_btn_borderless_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_btn_borderless_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_btn_check_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_btn_check_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_btn_check_material_anim.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_btn_check_material_anim.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_btn_default_mtrl_shape.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_btn_default_mtrl_shape.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_btn_radio_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_btn_radio_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_btn_radio_material_anim.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_btn_radio_material_anim.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_cab_background_internal_bg.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_cab_background_internal_bg.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_cab_background_top_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_cab_background_top_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_ic_ab_back_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_ic_ab_back_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_ic_arrow_drop_right_black_24dp.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_ic_clear_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_ic_clear_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_ic_go_search_api_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_ic_go_search_api_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_ic_menu_copy_mtrl_am_alpha.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_ic_menu_copy_mtrl_am_alpha.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_ic_menu_cut_mtrl_alpha.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_ic_menu_cut_mtrl_alpha.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_ic_menu_overflow_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_ic_menu_overflow_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_ic_menu_paste_mtrl_am_alpha.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_ic_menu_paste_mtrl_am_alpha.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_ic_menu_selectall_mtrl_alpha.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_ic_menu_selectall_mtrl_alpha.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_ic_menu_share_mtrl_alpha.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_ic_menu_share_mtrl_alpha.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_ic_search_api_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_ic_search_api_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_ic_voice_search_api_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_ic_voice_search_api_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_item_background_holo_dark.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_item_background_holo_dark.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_item_background_holo_light.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_item_background_holo_light.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_list_selector_background_transition_holo_dark.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_list_selector_background_transition_holo_dark.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_list_selector_background_transition_holo_light.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_list_selector_background_transition_holo_light.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_list_selector_holo_dark.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_list_selector_holo_dark.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_list_selector_holo_light.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_list_selector_holo_light.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_ratingbar_indicator_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_ratingbar_indicator_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_ratingbar_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_ratingbar_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_ratingbar_small_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_ratingbar_small_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_seekbar_thumb_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_seekbar_thumb_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_seekbar_tick_mark_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_seekbar_tick_mark_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_seekbar_track_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_seekbar_track_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_spinner_textfield_background_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_spinner_textfield_background_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_star_black_48dp.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_star_black_48dp.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_star_half_black_48dp.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_star_half_black_48dp.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_switch_thumb_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_switch_thumb_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_tab_indicator_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_tab_indicator_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_text_cursor_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_text_cursor_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/abc_textfield_search_material.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_abc_textfield_search_material.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/btn_checkbox_checked_mtrl.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_btn_checkbox_checked_mtrl.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/btn_checkbox_checked_to_unchecked_mtrl_animation.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_btn_checkbox_checked_to_unchecked_mtrl_animation.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/btn_checkbox_unchecked_mtrl.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_btn_checkbox_unchecked_mtrl.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/btn_checkbox_unchecked_to_checked_mtrl_animation.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_btn_checkbox_unchecked_to_checked_mtrl_animation.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/btn_radio_off_mtrl.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_btn_radio_off_mtrl.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/btn_radio_off_to_on_mtrl_animation.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_btn_radio_off_to_on_mtrl_animation.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/btn_radio_on_mtrl.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_btn_radio_on_mtrl.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/btn_radio_on_to_off_mtrl_animation.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_btn_radio_on_to_off_mtrl_animation.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/test_level_drawable.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_test_level_drawable.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/tooltip_frame_dark.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_tooltip_frame_dark.xml.flat
+Compiling xml file /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c82f5b0392686e0bf479b301ff81a7e0/transformed/appcompat-1.7.0/res/drawable/tooltip_frame_light.xml to /data/data/com.termux/files/home/.gradle/caches/9.0.0/transforms/c8e85ca98cbb94c699b884a84e73e454-f75e6630-47ec-4bca-88fb-68a2958978ce/transformed/androidx.appcompat/drawable_tooltip_frame_light.xml.flat
+AAPT2 aapt2-8.4.2-11315950-linux Daemon #1: starting
+
+[Incubating] Problems report is available at: file:///storage/emulated/0/Download/glt-video-analyzer-skeleton/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.0.0/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+15 actionable tasks: 15 executed
