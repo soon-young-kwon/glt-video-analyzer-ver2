@@ -19,28 +19,36 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
+          cache: gradle
 
-      - name: Set up Android SDK (플랫폼/빌드툴 명시)
+      - name: Set up Android SDK
         uses: android-actions/setup-android@v3
         with:
           packages: |
-            platforms;android-34
-            build-tools;35.0.0
             platform-tools
-            cmdline-tools;latest
+            platforms;android-34
+            build-tools;34.0.0
+
+      # 👇 Gradle 캐시 (가장 중요!) — 다음 빌드부터 훨씬 빨라짐
+      - name: Cache Gradle
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.gradle/caches
+            ~/.gradle/wrapper
+          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties', '**/settings.gradle') }}
+          restore-keys: |
+            ${{ runner.os }}-gradle-
 
       - name: Make Gradle executable
         run: chmod +x ./gradlew
 
-      - name: Build Debug APK (로그 많이)
-        env:
-          JAVA_TOOL_OPTIONS: -Xmx3g
-          GRADLE_OPTS: -Dorg.gradle.jvmargs="-Xmx3g -Dfile.encoding=UTF-8"
+      - name: Build Debug APK
         run: ./gradlew --no-daemon --stacktrace assembleDebug
 
       - name: Upload APK artifact
-        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: app-debug
           path: app/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
