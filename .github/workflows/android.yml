@@ -9,6 +9,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      ANDROID_SDK_ROOT: ${{ runner.temp }}/android-sdk
+      ANDROID_HOME: ${{ runner.temp }}/android-sdk
+      PATH: ${{ runner.temp }}/android-sdk/platform-tools:${{ runner.temp }}/android-sdk/cmdline-tools/latest/bin:${{ env.PATH }}
 
     steps:
       - name: Checkout
@@ -18,26 +22,21 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: 17
-          cache: gradle  # Gradle 캐시 (기본)
+          java-version: '17'
+          cache: gradle
 
-      # 추가 캐시: wrapper 포함해서 더 확실히 저장
-      - name: Cache Gradle
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.gradle/caches
-            ~/.gradle/wrapper
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties', '**/settings.gradle') }}
-          restore-keys: |
-            ${{ runner.os }}-gradle-
-
-      - name: Set up Android SDK
-        uses: android-actions/setup-android@v3
-        with:
-          packages: |
-            platforms;android-34
-            build-tools;34.0.0
+      # <- 문제되던 액션 대신 수동 설치
+      - name: Install Android SDK (manual)
+        shell: bash
+        run: |
+          set -eux
+          sudo apt-get update
+          sudo apt-get install -y wget unzip
+          mkdir -p "$ANDROID_SDK_ROOT/cmdline-tools"
+          wget -q https://dl.google.com/android/repository/commandlinetools-linux-11076708_latest.zip -O /tmp/cmdline-tools.zip
+          unzip -q /tmp/cmdline-tools.zip -d "$ANDROID_SDK_ROOT/cmdline-tools"
+          mv "$ANDROID_SDK_ROOT/cmdline-tools/cmdline-tools" "$ANDROID_SDK_ROOT/cmdline-tools/latest"
+          yes | "$ANDROID_SDK_ROOT/cmdline-tools/latest/bin/sdkmanager" --sdk_root="$ANDROID_SDK_ROOT" "platform-tools" "platforms;android-34" "build-tools;34.0.0"
 
       - name: Make Gradle executable
         run: chmod +x ./gradlew
@@ -46,9 +45,7 @@ jobs:
         run: ./gradlew --no-daemon assembleDebug
 
       - name: Upload APK artifact
-        if: success()
         uses: actions/upload-artifact@v4
         with:
-          name: app-debug
+          name: app-debug.apk
           path: app/build/outputs/apk/debug/*.apk
-          if-no-files-found: error
